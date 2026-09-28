@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-zh="探索中国之旅 - 亚马逊KDP畅销旅游指南" data-en="Discover China - Amazon KDP Best-Selling Travel Guide">探索中国之旅 - 亚马逊KDP畅销旅游指南</title>
+    <title data-zh="中国旅行系列指南 - 亚马逊KDP畅销书" data-en="China Travel Guide Series - Amazon KDP Best-Sellers">中国旅行系列指南 - 亚马逊KDP畅销书</title>
     <!-- 引入 Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,12 +15,11 @@
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-red-600 flex items-center gap-2">
                 <i class="fa-solid fa-compass"></i> 
-                <span data-zh="中国旅游指南" data-en="China Travel Guide">中国旅游指南</span>
+                <span data-zh="中国旅游指南" data-en="China Travel Series">中国旅游指南</span>
             </a>
             
             <nav class="hidden md:flex gap-6 text-sm font-medium text-gray-600">
-                <a href="#about-book" class="hover:text-red-600 transition" data-zh="书籍介绍" data-en="About Book">书籍介绍</a>
-                <a href="#highlights" class="hover:text-red-600 transition" data-zh="核心亮点" data-en="Highlights">核心亮点</a>
+                <a href="#books" class="hover:text-red-600 transition" data-zh="作品专区" data-en="Books">作品专区</a>
                 <a href="#author" class="hover:text-red-600 transition" data-zh="关于作者" data-en="About Author">关于作者</a>
             </nav>
 
@@ -29,139 +28,130 @@
                 <button onclick="toggleLanguage()" id="lang-btn" class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1.5 rounded-full text-xs font-bold transition">
                     EN / 中文
                 </button>
-                <a href="#buy" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition shadow-md" data-zh="去亚马逊购买" data-en="Buy on Amazon">
-                    去亚马逊购买
-                </a>
             </div>
         </div>
     </header>
 
     <!-- 英雄区 (Hero Section) -->
-    <section class="bg-gradient-to-r from-red-900 to-red-700 text-white py-20">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="bg-red-800 text-red-200 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider" data-zh="亚马逊 KDP 独家出版" data-en="Exclusive on Amazon KDP">亚马逊 KDP 独家出版</span>
-                <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-6 leading-tight" data-zh="用最地道的视角，带你畅游迷人的中国" data-en="Explore Fascinating China from a Local Perspective">
-                    用最地道的视角，带你畅游迷人的中国
-                </h1>
-                <p class="text-lg text-red-100 mb-8 leading-relaxed" data-zh="摆脱千篇一律的旅游团路线！收录最鲜为人知的秘境、地道美食推荐以及实用的在地旅行贴士，专为全球旅行者打造。" data-en="Escape ordinary tour groups! Discover hidden gems, authentic local food recommendations, and essential travel tips tailored for global travelers.">
-                    摆脱千篇一律的旅游团路线！收录最鲜为人知的秘境、地道美食推荐以及实用的在地旅行贴士，专为全球旅行者打造。
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#buy" id="buy" class="bg-white text-red-700 hover:bg-gray-100 font-bold px-8 py-3 rounded-lg text-center transition shadow-lg flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-amazon"></i> 
-                        <span data-zh="在亚马逊上购买" data-en="Buy on Amazon">在亚马逊上购买</span>
-                    </a>
-                    <a href="#highlights" class="border border-white/40 hover:border-white text-white font-medium px-8 py-3 rounded-lg text-center transition" data-zh="了解更多内容" data-en="Learn More">
-                        了解更多内容
-                    </a>
-                </div>
-            </div>
-            <div class="flex justify-center">
-                <div class="bg-white p-3 rounded-xl shadow-2xl transform rotate-2 hover:rotate-0 transition duration-300 max-w-xs">
-                    <!-- 书籍封面图片 -->
-                    <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&q=80&w=600" alt="Book Cover" class="rounded-lg shadow-inner w-full h-auto object-cover">
-                    <div class="text-center mt-3 text-gray-800 font-bold text-sm" data-zh="《你的中国旅行圣经》" data-en="'Your China Travel Bible'">《你的中国旅行圣经》</div>
-                    <div class="text-center text-xs text-gray-500" data-zh="Kindle & 纸质版同步发售" data-en="Kindle & Paperback Available">Kindle & 纸质版同步发售</div>
-                </div>
-            </div>
+    <section class="bg-gradient-to-r from-red-900 to-red-700 text-white py-16 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <span class="bg-red-800 text-red-200 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider" data-zh="亚马逊 KDP 独家出版" data-en="Exclusive on Amazon KDP">亚马逊 KDP 独家出版</span>
+            <h1 class="text-3xl md:text-5xl font-extrabold mt-4 mb-4" data-zh="深度探索中国的终极旅行丛书" data-en="The Ultimate China Travel Guide Series">
+                深度探索中国的终极旅行丛书
+            </h1>
+            <p class="text-lg text-red-100 max-w-2xl mx-auto leading-relaxed" data-zh="专为全球独立旅行者打造，涵盖地道美食、生存指南及全方位科技与支付攻略。" data-en="Tailored for global independent travelers, covering street food, survival guides, and tech/payment tips.">
+                专为全球独立旅行者打造，涵盖地道美食、生存指南及全方位科技与支付攻略。
+            </p>
         </div>
     </section>
 
-    <!-- 书籍介绍 / 核心亮点 -->
-    <section id="highlights" class="py-20 max-w-6xl mx-auto px-4">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4" data-zh="为什么这本书值得你拥有？" data-en="Why This Book is a Must-Have?">为什么这本书值得你拥有？</h2>
-            <p class="text-gray-600" data-zh="无论你是第一次去中国，还是资深旅行老手，这本书都能为你提供不一样的体验。" data-en="Whether it's your first time in China or you're a seasoned traveler, this book offers a unique experience.">无论你是第一次去中国，还是资深旅行老手，这本书都能为你提供不一样的体验。</p>
+    <!-- 三本书展示区 -->
+    <section id="books" class="py-16 max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900" data-zh="精选图书作品" data-en="Book Collection">精选图书作品</h2>
+            <p class="text-gray-600 mt-2" data-zh="点击下方按钮前往亚马逊 KDP 获取电子书或纸质版" data-en="Click below to get your Kindle or paperback edition on Amazon">点击下方按钮前往亚马逊 KDP 获取电子书或纸质版</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-            <!-- 亮点 1 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
-                    <i class="fa-solid fa-map-location-dot"></i>
+            
+            <!-- 书籍 1: Eating in China -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between hover:shadow-lg transition">
+                <div>
+                    <div class="bg-gray-900 h-72 overflow-hidden flex items-center justify-center">
+                        <img src="file_00000000f78481f4b02155e0f78c595e.jpg" alt="Eating in China" class="w-full h-full object-contain bg-black">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs bg-red-100 text-red-600 px-2.5 py-1 rounded font-semibold" data-zh="美食硬核指南 ($6.99 起)" data-en="Culinary Guide (From $6.99)">美食硬核指南 ($6.99 起)</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-3 mb-2">Eating in China</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-zh="An Insider’s Guide to Regional Cuisines, Street Food, and Culinary Survival. Real Food. Real China. No Filters." data-en="An Insider’s Guide to Regional Cuisines, Street Food, and Culinary Survival. Real Food. Real China. No Filters.">
+                            An Insider’s Guide to Regional Cuisines, Street Food, and Culinary Survival. Real Food. Real China. No Filters.
+                        </p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-gray-900" data-zh="地道路线设计" data-en="Authentic Itineraries">地道路线设计</h3>
-                <p class="text-gray-600 leading-relaxed" data-zh="从古老的胡同到现代化的天际线，避开人挤人的旅游陷阱，带你走入真正的当地生活。" data-en="From ancient alleyways to modern skylines, avoid tourist traps and experience real local life.">
-                    从古老的胡同到现代化的天际线，避开人挤人的旅游陷阱，带你走入真正的当地生活。
-                </p>
-            </div>
-            <!-- 亮点 2 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
-                    <i class="fa-solid fa-utensils"></i>
+                <div class="p-6 pt-0 flex flex-col gap-2">
+                    <a href="https://www.amazon.com/dp/B0HK8MC743" target="_blank" class="block w-full bg-red-600 hover:bg-red-700 text-white text-center font-bold py-2 rounded-lg transition text-sm">
+                        <i class="fa-brands fa-amazon mr-1"></i> <span data-zh="购买 Kindle 电子书" data-en="Buy Kindle eBook">购买 Kindle 电子书</span>
+                    </a>
+                    <a href="https://www.amazon.com/dp/B0HK8FWS8J" target="_blank" class="block w-full bg-gray-800 hover:bg-gray-900 text-white text-center font-bold py-2 rounded-lg transition text-sm">
+                        <i class="fa-solid fa-book mr-1"></i> <span data-zh="购买平装纸质书" data-en="Buy Paperback">购买平装纸质书</span>
+                    </a>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-gray-900" data-zh="吃货必备指南" data-en="Foodie's Essential Guide">吃货必备指南</h3>
-                <p class="text-gray-600 leading-relaxed" data-zh="不仅告诉你去哪吃，还教你如何点菜、如何看懂菜单，品尝最地道的中国八大菜系与街头小吃。" data-en="Not just where to eat, but how to order, read menus, and taste the best regional cuisines and street food.">
-                    不仅告诉你去哪吃，还教你如何点菜、如何看懂菜单，品尝最地道的中国八大菜系与街头小吃。
-                </p>
             </div>
-            <!-- 亮点 3 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
-                    <i class="fa-solid fa-lightbulb"></i>
+
+            <!-- 书籍 2: Mastering China Travel -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between hover:shadow-lg transition">
+                <div>
+                    <div class="bg-gray-900 h-72 overflow-hidden flex items-center justify-center">
+                        <img src="dc2f1f94-0f2d-4fff-9774-0e773efbe4cf.jpg" alt="Mastering China Travel" class="w-full h-full object-contain bg-black">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs bg-red-100 text-red-600 px-2.5 py-1 rounded font-semibold" data-zh="科技与支付全攻略 ($4.99 起)" data-en="Tech & Payments (From $4.99)">科技与支付全攻略 ($4.99 起)</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-3 mb-2">Mastering China Travel</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-zh="No Cash, No Problem: The Complete Setup Manual for Connectivity, Payments, and Daily Navigation (2026 Edition)" data-en="No Cash, No Problem: The Complete Setup Manual for Connectivity, Payments, and Daily Navigation (2026 Edition)">
+                            No Cash, No Problem: The Complete Setup Manual for Connectivity, Payments, and Daily Navigation (2026 Edition)
+                        </p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-gray-900" data-zh="实用贴士合集" data-en="Practical Travel Tips">实用贴士合集</h3>
-                <p class="text-gray-600 leading-relaxed" data-zh="支付方式（微信/支付宝）、高铁出行、手机APP下载等全方位干货，让你出行无忧。" data-en="Essential guides on mobile payments (WeChat/Alipay), high-speed trains, and must-have apps.">
-                    支付方式（微信/支付宝）、高铁出行、手机APP下载等全方位干货，让你出行无忧。
-                </p>
+                <div class="p-6 pt-0 flex flex-col gap-2">
+                    <a href="https://www.amazon.com/dp/B0HK7YYCP6" target="_blank" class="block w-full bg-red-600 hover:bg-red-700 text-white text-center font-bold py-2 rounded-lg transition text-sm">
+                        <i class="fa-brands fa-amazon mr-1"></i> <span data-zh="购买 Kindle 电子书" data-en="Buy Kindle eBook">购买 Kindle 电子书</span>
+                    </a>
+                    <a href="https://www.amazon.com/dp/B0HK8K5J2L" target="_blank" class="block w-full bg-gray-800 hover:bg-gray-900 text-white text-center font-bold py-2 rounded-lg transition text-sm">
+                        <i class="fa-solid fa-book mr-1"></i> <span data-zh="购买平装纸质书" data-en="Buy Paperback">购买平装纸质书</span>
+                    </a>
+                </div>
             </div>
+
+            <!-- 书籍 3: China Travel Survival Guide -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between hover:shadow-lg transition">
+                <div>
+                    <div class="bg-gray-900 h-72 overflow-hidden flex items-center justify-center">
+                        <img src="file_000000004804820a8fc5aa6538c0c6c8.png" alt="China Travel Survival Guide" class="w-full h-full object-contain bg-black">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs bg-red-100 text-red-600 px-2.5 py-1 rounded font-semibold" data-zh="生存必备 ($3.99)" data-en="Survival Guide ($3.99)">生存必备 ($3.99)</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-3 mb-2">China Travel Survival Guide</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-zh="200 Essential Phrases for Independent Travelers. 专为独立旅行者打造的200个核心实用短语与生存指南。" data-en="200 Essential Phrases for Independent Travelers. Master essential communication and survival tips across China.">
+                            200 Essential Phrases for Independent Travelers. 专为独立旅行者打造的200个核心实用短语与生存指南。
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="https://www.amazon.com/dp/B0HJZKS5V9" target="_blank" class="block w-full bg-red-600 hover:bg-red-700 text-white text-center font-bold py-2.5 rounded-lg transition text-sm">
+                        <i class="fa-brands fa-amazon mr-1"></i> <span data-zh="购买 Kindle 电子书" data-en="Buy on Amazon">购买 Kindle 电子书</span>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- 关于作者 -->
-    <section id="author" class="bg-gray-100 py-20">
-        <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
-            <div class="w-40 h-40 rounded-full overflow-hidden shadow-lg flex-shrink-0 bg-gray-300">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" alt="Author" class="w-full h-full object-cover">
-            </div>
-            <div>
-                <span class="text-red-600 font-semibold text-sm uppercase tracking-wider" data-zh="关于作者" data-en="About the Author">关于作者</span>
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mt-1 mb-4" data-zh="你好，我是 [你的名字/笔名]" data-en="Hello, I'm [Your Name / Pen Name]">你好，我是 [你的名字/笔名]</h2>
-                <p class="text-gray-600 leading-relaxed mb-6" data-zh="我是一名热爱旅行与写作的行者。中国有着无与伦比的历史底蕴和日新月异的现代风貌。我将自己多年来的实地走访经验倾注在这本书中，希望能够帮助每一位想要探索中国的读者，开启一段难忘的旅程。" data-en="I am a traveler and writer passionate about exploring the world. China blends deep historical heritage with dynamic modernity. I poured years of firsthand field experience into this book to help every reader start an unforgettable journey.">
-                    我是一名热爱旅行与写作的行者。中国有着无与伦比的历史底蕴和日新月异的现代风貌。我将自己多年来的实地走访经验倾注在这本书中，希望能够帮助每一位想要探索中国的读者，开启一段难忘的旅程。
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 底部行动呼吁 (CTA) -->
-    <section class="py-20 bg-white text-center" id="buy-section">
-        <div class="max-w-3xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4" data-zh="准备好开启你的中国冒险了吗？" data-en="Ready to Start Your China Adventure?">准备好开启你的中国冒险了吗？</h2>
-            <p class="text-gray-600 mb-8" data-zh="立刻前往亚马逊 KDP 获取你的电子书或纸质版，让旅途不再迷茫。" data-en="Get your Kindle or paperback edition on Amazon KDP now and travel with confidence.">立刻前往亚马逊 KDP 获取你的电子书或纸质版，让旅途不再迷茫。</p>
-            <!-- 替换为你的真实亚马逊购买链接 -->
-            <a href="https://www.amazon.com/dp/你的亚马逊ASIN编号" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold px-10 py-4 rounded-xl text-lg shadow-xl inline-flex items-center gap-3 transition transform hover:-translate-y-0.5">
-                <i class="fa-brands fa-amazon text-2xl"></i> 
-                <span data-zh="立即在 Amazon 购买" data-en="Buy Now on Amazon">立即在 Amazon 购买</span>
-            </a>
+    <section id="author" class="bg-gray-100 py-16">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4" data-zh="关于作者 - Shun Tu" data-en="About the Author - Shun Tu">关于作者 - Shun Tu</h2>
+            <p class="text-gray-600 leading-relaxed" data-zh="致力于通过最硬核、最真实的视角，为全球独立旅行者打开通往中国的大门。告别浮于表面，带你体验真正的中国。" data-en="Dedicated to opening the door to China for global independent travelers through the most hardcore and authentic perspectives.">
+                致力于通过最硬核、最真实的视角，为全球独立旅行者打开通往中国的大门。告别浮于表面，带你体验真正的中国。
+            </p>
         </div>
     </section>
 
     <!-- 页脚 -->
-    <footer class="bg-gray-900 text-gray-400 py-10 text-sm">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>&copy; 2026 [你的名字/书名]. <span data-zh="保留所有权利." data-en="All rights reserved.">保留所有权利.</span> Powered by Amazon KDP.</p>
-        </div>
+    <footer class="bg-gray-900 text-gray-400 py-8 text-sm text-center">
+        <p>&copy; 2026 Shun Tu. <span data-zh="保留所有权利." data-en="All rights reserved.">保留所有权利.</span> Powered by Amazon KDP.</p>
     </footer>
 
-    <!-- 简单的中英文切换脚本 -->
+    <!-- 语言切换脚本 -->
     <script>
-        let currentLang = 'zh'; // 默认是中文
-
+        let currentLang = 'zh';
         function toggleLanguage() {
             currentLang = currentLang === 'zh' ? 'en' : 'zh';
             const elements = document.querySelectorAll('[data-zh]');
-            
             elements.forEach(el => {
-                if (currentLang === 'en') {
-                    el.innerText = el.getAttribute('data-en');
-                } else {
-                    el.innerText = el.getAttribute('data-zh');
+                if(el.getAttribute(`data-${currentLang}`)) {
+                    el.innerText = el.getAttribute(`data-${currentLang}`);
                 }
             });
-
-            // 改变按钮文字提示
             document.getElementById('lang-btn').innerText = currentLang === 'zh' ? 'EN / 中文' : '中文 / EN';
         }
     </script>
